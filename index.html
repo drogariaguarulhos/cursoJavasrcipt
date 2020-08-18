@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Curso Java Script</title>
+    </head>
+    <body>
+        <script>
+            var pessoas = [
+                { 
+                    Nome: 'Carlos',
+                    Idade: 43,
+                    Peso: 84.5,
+                    IsLive: false
+                },
+                { 
+                    Nome: 'Consoelo',
+                    Idade: 34,
+                    Peso: 78.2,
+                    IsLive: true
+                },
+                { 
+                    Nome: 'Gabriel',
+                    Idade: 6,
+                    Peso: 20.5,
+                    IsLive: true
+                },
+            ]
+            console.log('='.repeat(40));
+            for (const key in pessoas) {
+                const element = pessoas[key];
+                console.log(`Nome: ${element.Nome} Idade: ${element.Idade}`);
+                console.log(`Peso: ${element.Peso} Esta Vivo: ${element.IsLive? 'Sim': 'Não'}`);
+                console.log('='.repeat(40));
+            }
+        </script>
+    </body>
+</html>
