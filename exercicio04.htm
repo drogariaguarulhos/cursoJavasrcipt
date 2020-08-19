@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Exercico 04 JavaScript</title>
+</head>
+
+<body>
+    <div name="conteudo"></div>
+    <script>
+        function experiencia(anos) {
+            if(anos <= 1) return "Iniciante";
+            else if(anos > 1 && anos <= 3) return "Intermediario";
+            else if(anos > 3 && anos <= 6) return "Avançado";
+            else return "Jedi Master";
+        }
+        var element = document.querySelector("div[name=conteudo]");
+        element.innerHTML = experiencia(7);
+        console.log(experiencia(7)); 
+    </script>
+</body>
+
+</html>

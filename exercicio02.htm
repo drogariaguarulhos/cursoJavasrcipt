@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Exercico 02 JavaScript</title>
+    </head>
+    <body>
+        <div name="conteudo"></div>
+        <script>
+            function MostraPares(inicio, fim){
+                var texto = '';
+                for(var i = inicio; i <= fim; i++){
+                    if(i % 2 === 0){
+                        if(texto.trim() !== '') texto += '\n\r';
+                        texto += i;
+                    }
+                }
+                return texto;
+            }
+            function MostraParesSimpificada(inicio, fim){
+                var texto = '';
+                for(var i = inicio; i <= fim; i++){
+                    texto += i % 2 === 0? `${i} ` : '';
+                }
+                return texto;
+            }
+
+            var element=document.querySelector("div[name=conteudo]");
+            element.innerHTML = MostraParesSimpificada(32, 321);
+            console.log(MostraParesSimpificada(32, 321)); 
+        </script>
+    </body>
+</html>

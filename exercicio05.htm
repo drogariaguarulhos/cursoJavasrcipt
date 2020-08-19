@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Exercico 04 JavaScript</title>
+</head>
+
+<body>
+    <div name="conteudo"></div>
+    <script>
+        function habilidades(usuarios, isconsole) {
+            var texto = '';
+            for (var i in usuarios) {
+                texto += `O ${usuarios[i].nome} possui as habilidades: ${usuarios[i].habilidades.join(", ")}${isconsole ? "\n\r" : "<br/>"}`;
+            }
+            return texto;
+        }
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+        var element = document.querySelector("div[name=conteudo]");
+        element.innerHTML = habilidades(usuarios, false);
+        console.log(habilidades(usuarios, true)); 
+    </script>
+</body>
+
+</html>

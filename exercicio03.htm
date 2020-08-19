@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Exercico 03 JavaScript</title>
+</head>
+
+<body>
+    <div name="conteudo"></div>
+    <script>
+        function temHabilidade(skills) {
+            return skills.includes("Javascript");
+        }
+        var skills = ["Javascript", "ReactJS", "React Native"];
+         // true ou false
+
+        var element = document.querySelector("div[name=conteudo]");
+        element.innerHTML = temHabilidade(skills)? "Possue JavaScript": "Não Possue JavaScript" ;
+        console.log(temHabilidade(skills)? "Possue JavaScript": "Não Possue JavaScript"); 
+    </script>
+</body>
+
+</html>
