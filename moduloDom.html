@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Estrutura de Repetiçãop JavaScript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" name="nome" id='nome' />
+            <button class='botao'>Adicionar</button>
+        </div>
+        <script>
+            var inputName = document.querySelector("input[name=nome]");
+            var btnElement = document.querySelector("button.botao");
+            btnElement.onclick = function() {
+                alert(`Ola, ${inputName.value}!`);
+            }
+        </script>
+    </body>
+</html>

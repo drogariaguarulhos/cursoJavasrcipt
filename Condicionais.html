@@ -4,6 +4,15 @@
     </head>
     <body>
         <script>
+            function retornaSexo(sexo){
+                return sexo.toUpperCase() === 'M'? 'Masculino' : sexo.toUpperCase() === 'F'? 'Feminino' : 'Não Informado';
+            }
+
+            console.log(retornaSexo('m'));
+            console.log(retornaSexo('f'));
+            console.log(retornaSexo('i'));
+
+
         </script>
     </body>
 </html>
