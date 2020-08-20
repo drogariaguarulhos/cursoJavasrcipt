@@ -1,0 +1,59 @@
+.divEntrada {
+    flex: 1;
+    flex-direction: row;
+    border-bottom-width: 1;
+    border-bottom-color: darkgrey;
+}
+input {
+    flex: 1;
+    height: 35px;
+    width: 90%;
+    padding-left: 5px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border-color: royalblue;
+}
+
+button {
+    height: 35px;
+    border-radius: 40px;
+    background-color:royalblue;
+    border-color: royalblue;
+    color: snow;
+    
+}
+
+h4 {
+    color: royalblue;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+ul{
+    height: 70%;
+    width: 95%;
+    border: 1px solid royalblue;
+    background-color:royalblue;
+    border-radius: 20px;
+}
+
+li {
+    padding-top: 10px;
+    flex: 1;
+    flex-direction: row;
+    color: darkgreen;
+    font-size: 16px;
+    color: snow;
+}
+
+a {
+    color: snow;
+    border-radius: 40px;
+    text-decoration: none;
+    background-color: red;
+    border: 1px solid red;
+    height: 35px;
+    width: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
