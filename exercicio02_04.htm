@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Exercicio 04 Modulo 02 JavaScript</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <input id='nome' placeholder="Digite um Nome" />
+            <button id='btn'>Carregar Lista</button>
+        </div>
+        <ul id='lista'></ul>
+    </div>
+    <script>
+        var element = document.querySelector("#btn");
+        btn.onclick = function () {
+            var list = document.querySelector("#lista");
+            var name = document.querySelector("#nome");
+            if (name.value.trim() === '') alert('Você deve digitar um Nome!');
+            else {
+                var text = document.createTextNode(name.value.toUpperCase())
+                var element = document.createElement('li');
+                element.appendChild(text);
+                list.appendChild(element);
+                name.value = '';
+            }
+        }
+    </script>
+</body>
+
+</html>

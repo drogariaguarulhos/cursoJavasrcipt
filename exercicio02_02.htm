@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Exercicio 02 Modulo 02 JavaScript</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <button id='btn'>Criar Novo Quadrado</button>
+        </div>
+        <div style="display: flex; flex-direction: row; margin: 10px;" id='conteudo'>
+
+        </div>
+    </div>
+    <script>
+        var counter = 0;
+        var element = document.querySelector("#btn");
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        function entrar(id){
+            var x = document.querySelector(id)
+            x.style.backgroundColor =  getRandomColor();
+        }
+        function sair(id){
+            var x = document.querySelector(id)
+            x.style.backgroundColor =  'red';
+        }
+        btn.onclick = function () {
+            var div = document.querySelector("#conteudo");
+            var quadrado = document.createElement('div');
+            quadrado.setAttribute('onmouseover',`entrar('#box${counter}')`);
+            quadrado.setAttribute('onmouseout',`sair('#box${counter}')`);
+            quadrado.setAttribute('id',`box${counter}`);
+            quadrado.style.width = 100;
+            quadrado.style.height = 100;
+            quadrado.style.backgroundColor = 'red';
+            quadrado.style.margin = 15;
+            div.appendChild(quadrado);
+            counter++;
+        }
+    </script>
+</body>
+
+</html>
